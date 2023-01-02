@@ -19,7 +19,7 @@ html,
   }
 }
 
-.page__main {
+.page__main {  
   height: 100%;
   color: $text-color;
   .col-aside {
@@ -32,7 +32,7 @@ html,
   }
 }
 
-.page__main-inner {
+.page__main-inner {  
   position: relative;
   @include flexbox();
   @include flex-direction(column);
@@ -155,7 +155,7 @@ html,
 }
 
 .page__main--immersive {
-  .page__header {
+  .page__header {    
     position: absolute;
     width: 100%;
   }
