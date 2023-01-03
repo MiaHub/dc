@@ -110,7 +110,7 @@ function tick()
       buttonDelay = 3000;
     } else if (buttonWAsClicked == 5)
     {
-    location.href = "/2017/01/01/welcome.html";     
+    location.href = "https://miahub.github.io/dc/2017/01/01/welcome.html";     
     } 
   }  
 
