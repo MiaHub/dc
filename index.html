@@ -8,17 +8,23 @@
     <script src="https://unpkg.com/gsap@3/dist/ScrollTrigger.min.js"></script>
     <script src="https://unpkg.com/gsap@3/dist/ScrollToPlugin.min.js"></script>
     <script src='https://code.jquery.com/jquery-3.3.1.slim.min.js'></script>
-    
-    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>    
+    <!-- 
+     change for local dev 
+    -->
     <link rel="stylesheet" href="{{site.url}}assets/css/main.css">
     <script src="{{site.url}}assets/js/jlanding.js"></script>
-    <link rel="stylesheet" href="{{site.url}}assets/css/redPill.css">
+    <link rel="stylesheet" href="{{site.url}}assets/css/redPill.css"> 
     
+    <!-- <link rel="stylesheet" href="assets/css/main.css">
+    <script src="assets/js/jlanding.js"></script>
+    <link rel="stylesheet" href="assets/css/redPill.css">     -->
+
     </head>
     
     
     <body onload="init();" style="margin: 0; padding: 0; background-color: #000000;">
-      <canvas id="canvas" width="2560" height="1040" style="display:block; margin:0 auto;"></canvas>
+      <canvas id="canvas"></canvas>
         
         <button id="button" hidden="hidden" class="btn">red Pill</button>
         
@@ -31,7 +37,9 @@
       <span class="input-cursor"></span>
     </div>
     
+
     <script>
+      // button show delay
       async function myFunction() {
           await waitForMs(4000);
           let element = document.getElementById("button");
@@ -44,5 +52,31 @@
           }
           myFunction()
     </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+    <script>
+(function() {
+        var canvas = document.getElementById('canvas'),
+                context = canvas.getContext('2d');
+
+        // resize the canvas to fill browser window dynamically
+        window.addEventListener('resize', resizeCanvas, false);
+        
+        function resizeCanvas() {
+                canvas.width = window.innerWidth;
+                canvas.height = window.innerHeight;
+                
+                /**
+                 * Your drawings need to be inside this function otherwise they will be reset when 
+                 * you resize the browser window and the canvas goes will be cleared.
+                 */
+                drawStuff(); 
+        }
+        resizeCanvas();
+        
+        function drawStuff() {
+                // do your drawing stuff here
+        }
+})();
+
+    </script>
     </html>

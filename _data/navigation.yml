@@ -54,10 +54,10 @@ header:
 docs-en:
   - title:      Start
     children:
-      - title:  Quick Start
-        url:    /docs/en/quick-start
-      - title:  Structure
-        url:    /docs/en/structure
+      - title:  Welcome
+        url:    /2017/01/01/welcome
+      - title:  Github
+        url:    /
   - title:      Customization
     children:
       - title:  Configuration
@@ -68,13 +68,17 @@ docs-en:
 health-en:
   - title:      Start
     children:
-      - title:  Quick Start
-        url:    /docs/en/quick-start
-      - title:  Structure
-        url:    /docs/en/structure
-  - title:      Customization
+      - title:  Welcome
+        url:    /2017/01/01/welcome
+      - title:  Github
+        url:    /
+  - title:      Health
     children:
-      - title:  Body
-        url:    /docs/en/configuration
-      - title:  Soul
-        url:    /docs/en/navigation        
+      - title:  Health
+        url:    2023/01/02/health
+      - title:  DailyRoutine
+        url:    /2023/01/02/dailyroutine
+      - title:  Spirit
+        url:    /2020/07/23/spirit     
+      - title:  Diet
+        url:    /2022/08/01/diet

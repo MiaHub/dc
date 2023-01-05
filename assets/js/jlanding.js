@@ -111,6 +111,7 @@ function tick()
     } else if (buttonWAsClicked == 5)
     {
     location.href = "https://miahub.github.io/dc/2017/01/01/welcome.html";     
+    // location.href = "/2017/01/01/welcome.html";     
     } 
   }  
 
