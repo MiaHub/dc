@@ -92,12 +92,12 @@ function tick()
     { 
       typeSentence("My name is ...", "#sentence")
       buttonWAsClicked = 2;
-      buttonDelay = 1800;
+      buttonDelay = 3600;
     } else if (buttonWAsClicked == 2)
     {
       typeSentence("I am a Software Developer", "#sentence")
       buttonWAsClicked = 3;
-      buttonDelay = 3600;
+      buttonDelay = 4000;
     } else if (buttonWAsClicked == 3)
     {
       typeSentence("Do you have problems with numbers ?", "#sentence")

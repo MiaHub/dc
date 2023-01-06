@@ -58,12 +58,6 @@ docs-en:
         url:    /2017/01/01/welcome
       - title:  Github
         url:    /
-  - title:      Customization
-    children:
-      - title:  Configuration
-        url:    /docs/en/configuration
-      - title:  Navigation
-        url:    /docs/en/navigation
 
 health-en:
   - title:      Start
@@ -82,3 +76,19 @@ health-en:
         url:    /2020/07/23/spirit     
       - title:  Diet
         url:    /2022/08/01/diet
+
+code-en:
+  - title:      Start
+    children:
+      - title:  Welcome
+        url:    /2017/01/01/welcome
+      - title:  Github
+        url:    /
+  - title:      Code
+    children:
+      - title:  Code
+        url:    2022/05/06/health
+      - title:  Docker
+        url:    2022/10/11/docker
+      - title:  Laravel
+        url:    2022/10/17/laravel
