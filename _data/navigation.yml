@@ -64,8 +64,6 @@ health-en:
     children:
       - title:  Welcome
         url:    /2017/01/01/welcome
-      - title:  Github
-        url:    /
   - title:      Health
     children:
       - title:  Health
@@ -82,8 +80,6 @@ code-en:
     children:
       - title:  Welcome
         url:    /2017/01/01/welcome
-      - title:  Github
-        url:    /
   - title:      Code
     children:
       - title:  Code
