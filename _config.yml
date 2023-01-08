@@ -22,7 +22,7 @@ url     : #https://miahub.github.io/dc # the base hostname & protocol for your s
 baseurl : /dc
 title   : DC
 description: > # this means to ignore newlines until "Language & timezone"
-  All about me
+  stay organized
 
 
 ## => Language and Timezone
