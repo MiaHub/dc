@@ -1,4 +1,6 @@
-
+---
+layout: none
+---
 <!DOCTYPE html><html lang="en">
     <head><meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,22 +14,23 @@
     <!-- 
      change for local dev 
     -->
-    <link rel="stylesheet" href="/dc/assets/css/main.css">
-    <script src="/dc/assets/js/jlanding.js"></script>
-    <link rel="stylesheet" href="/dc/assets/css/redPill.css"> 
-    
-    <!-- <link rel="stylesheet" href="assets/css/main.css">
-    <script src="assets/js/jlanding.js"></script>
-    <link rel="stylesheet" href="assets/css/redPill.css">     -->
+    <!-- <link rel="stylesheet" href="/assets/css/main.css">
+    <script src="/assets/js/jlanding.js"></script>
+    <link rel="stylesheet" href="/assets/css/redPill.css">  -->
 
+    <link rel="stylesheet" href='{{ "/assets/css/main.css" | relative_url }}'>
+    <script src='{{ "/assets/js/jlanding.js" | relative_url }}'></script>
+    <link rel="stylesheet" href='{{ "/assets/css/redPill.css" | relative_url }}'> 
+    <link rel="stylesheet" href='{{ "/assets/css/bluePill.css" | relative_url }}'> 
     </head>
     
     
     <body onload="init();" style="margin: 0; padding: 0; background-color: #000000;">
       <canvas id="canvas"></canvas>
         
-        <button id="button" hidden="hidden" class="btn">DC</button>
-        
+        <button id="buttonred" hidden="hidden" class="btn">leave</button>
+        <button id="button" hidden="hidden" class="btnblue">stay</button>
+         
     </body>    
     
     <div target="typeText">
@@ -40,9 +43,9 @@
 
     <script>
       // button show delay
-      async function myFunction() {
+      async function myFunction(id) {
           await waitForMs(4000);
-          let element = document.getElementById("button");
+          let element = document.getElementById(id);
           let hidden = element.getAttribute("hidden");
           element.removeAttribute("hidden");
           }
@@ -50,11 +53,12 @@
           function waitForMs(ms) {
               return new Promise(resolve => setTimeout(resolve, ms))
           }
-          myFunction()
+          myFunction("button")
+          myFunction("buttonred")
     </script>
 
     <script>
-(function() {
+        (function() {
         var canvas = document.getElementById('canvas'),
                 context = canvas.getContext('2d');
 
@@ -76,7 +80,7 @@
         function drawStuff() {
                 // do your drawing stuff here
         }
-})();
+        })();
 
     </script>
     </html>

@@ -9,6 +9,9 @@ let buttonWAsClicked = 0;
 let buttonTimer = 0;
 let buttonDelay = 2000;
 
+// special Array
+var specArray = false; 
+
 var canvas;
 var ctx;
 
@@ -57,16 +60,21 @@ function draw()
     ctx.fillStyle = lettercollors;
     for ( let i = 0 ; i < columns.length ; ++i )
     {
-      // here you could just show binary or a special array like your name =)
-      // var textArray = [
-        //   'D',
-        //   'C'
-        // ];
-        // var randomIndex = Math.floor(Math.random() * textArray.length); 
-        // var randomCharacter = textArray[randomIndex];
+      // here i could just show binary or a special array like my name
+        if ( specArray == true )
+        {
+          var textArray = [
+              '0',
+              '1'
+            ];
+            var randomIndex = Math.floor(Math.random() * textArray.length); 
+            var randomCharacter = textArray[randomIndex];
+        } else 
+        {
+          var randomCharacter = String.fromCharCode( 33+Math.floor(Math.random()*94) );
+        }
         
         // pick a random ascii character (change the 94 to a higher number to include more characters)
-        var randomCharacter = String.fromCharCode( 33+Math.floor(Math.random()*94) );
         ctx.fillText( randomCharacter , columns[i].x , columns[i].stackCounter*tileSize+tileSize );
 
         // if the stack is at its height limit, pick a new random height and reset the counter
@@ -100,18 +108,29 @@ function tick()
       buttonDelay = 4000;
     } else if (buttonWAsClicked == 3)
     {
-      typeSentence("Do you have problems with numbers ?", "#sentence")
+      typeSentence("Do you have problems with coding ?", "#sentence")
       buttonWAsClicked = 4;
       buttonDelay = 4000;
     } else if (buttonWAsClicked == 4)
     {
-      typeSentence("Numbers can be beautiful.", "#sentence")
+      typeSentence("Coding can be beautiful.", "#sentence")
       buttonWAsClicked = 5;
-      buttonDelay = 3000;
+      buttonDelay = 2200;
     } else if (buttonWAsClicked == 5)
     {
-    location.href = "https://miahub.github.io/dc/2017/01/01/welcome.html";     
-    // location.href = "/2017/01/01/welcome.html";     
+      typeSentence("Let me show you.", "#sentence")
+      buttonWAsClicked = 6;
+      specArray = true;
+      buttonDelay = 3000;
+    }
+     else if (buttonWAsClicked == 6)
+    {
+      setTimeout(function() {
+        location.href = "/dc/2017/01/01/welcome.html";     
+        // location.href = "https://miahub.github.io/dc/2017/01/01/welcome.html";    
+            // location.href = '{{ "/2017/01/01/welcome.html" | relative_url }}';     
+    }, 900); 
+    
     } 
   }  
 
@@ -130,6 +149,8 @@ function tick()
     lettercollors = "rgb( 255, 255, 255 )";  
     break;
     case 5:
+    lettercollors = random_rgba(); 
+    case 6:
     lettercollors = random_rgba(); 
     break;
     default:
@@ -169,27 +190,9 @@ function waitForMs(ms) {
   return new Promise(resolve => setTimeout(resolve, ms))
 }
 
-// Button counter 
-// let timeout;
-// let timer_on = 0;
-// function timedCount() {
-//   buttonTimer++;
-//   timeout = setTimeout(timedCount, 1000);
-// }
-// function startCount() {
-//   if (!timer_on) {
-//     timer_on = 1;
-//     timedCount();
-//   }
-// }
-// function stopCount() {
-//   clearTimeout(timeout);
-//   timer_on = 0;
-//   buttonTimer = 0;
-// }
-
+// button Click effect
 $(function() {
-  $('.btn').click(function() {    
+  $('.btnblue').click(function() {    
 
     if ($(this).hasClass("is-clicked"))
     {
@@ -209,8 +212,35 @@ $(function() {
   });
 });
 
-
+// random Color
 function random_rgba() {
   var o = Math.round, r = Math.random, s = 255;
   return 'rgba(' + o(r()*s) + ',' + o(r()*s) + ',' + o(r()*s) + ',' + r().toFixed(1) + ')';
 }
+
+// button Red click effect
+// button Click effect
+$(function() {
+  $('.btn').click(function() {    
+
+    if ($(this).hasClass("is-clicked"))
+    {
+      $(this).removeClass("is-clicked");
+      $(this).addClass("is-clickedd");
+    } else  
+    {
+      $(this).removeClass("is-clickedd");
+      $(this).addClass("is-clicked");
+    }
+
+    
+    document.getElementById("button").disabled = true;     
+    
+    setTimeout(function() {
+      document.getElementById("button").disabled = false; 
+      location.href = "/dc/2017/01/01/welcome.html";     
+    }, 900);
+
+  });
+});
+
