@@ -88,3 +88,15 @@ code-en:
         url:    2022/10/11/docker
       - title:  Laravel
         url:    2022/10/17/laravel
+
+tool-en:
+  - title:      Start
+    children:
+      - title:  Welcome
+        url:    /2017/01/01/welcome
+  - title:      Tool
+    children:
+      - title:  Tool
+        url:    2023/01/12/tools
+      - title:  Obsidian
+        url:    2023/01/12/obsidian
