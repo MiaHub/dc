@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "9c75559d7fdfa1b7",
+        "id": "e1fed30d8b8cd0fb",
         "type": "tabs",
         "children": [
           {
-            "id": "83a6b96acbea08bf",
+            "id": "c97b8dcb22fc1ff1",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "2023-01-14-chatgpt.md",
+                "file": "2023-01-14-dbeaver.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "2023-01-14-chatgpt.md",
+                "file": "2023-01-14-dbeaver.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "2023-01-14-chatgpt.md",
+                "file": "2023-01-14-dbeaver.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "2023-01-14-chatgpt.md"
+                "file": "2023-01-14-dbeaver.md"
               }
             }
           }
@@ -146,17 +146,17 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "83a6b96acbea08bf",
+  "active": "c97b8dcb22fc1ff1",
   "lastOpenFiles": [
+    "2023-01-14-dbeaver.md",
+    "2023-01-14-chatgpt.md",
+    "2023-01-02-dailyroutine.md",
+    "2017-01-01-welcome.md",
+    "2018-06-01-imgeffect.md",
+    "2022-08-01-diet.md",
+    "2022-10-11-docker.md",
     "2023-01-12-tools.md",
     "2023-01-12-obsidian.md",
-    "2023-01-14-chatgpt.md",
-    "Untitled.md",
-    "Untitled.canvas",
-    "2022-10-11-docker.md",
-    "2023-01-12-Obsidian.md",
-    "2023-01-12-Tools.md",
-    "2022-10-17-laravel.md",
-    "2022-05-06-code.md"
+    "Untitled.md"
   ]
 }
