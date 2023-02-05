@@ -2,7 +2,7 @@
   display: box;
   z-index: 10;
   position: absolute;
-  left: 45%;
+  left: 40%;
   width: 100px;
   height: 100px;
   background: linear-gradient(to bottom, rgb(28, 71, 140) 0%, rgb(0, 0, 244) 100%);

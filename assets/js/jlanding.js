@@ -118,7 +118,7 @@ function tick()
       buttonDelay = 2200;
     } else if (buttonWAsClicked == 5)
     {
-      typeSentence("Let me show you.", "#sentence")
+      typeSentence("Just make it binary.", "#sentence")
       buttonWAsClicked = 6;
       specArray = true;
       buttonDelay = 3000;
