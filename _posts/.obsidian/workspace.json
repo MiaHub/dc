@@ -13,13 +13,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "2023-01-14-chatgpt.md",
+                "file": "2022-05-06-code.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "6b214e8c96efc2a7",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "2022-05-06-code.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -48,7 +61,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "tag:#Code",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -64,8 +77,17 @@
               "type": "starred",
               "state": {}
             }
+          },
+          {
+            "id": "47b1ee32369df2c6",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -85,7 +107,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "2023-01-14-chatgpt.md",
+                "file": "2022-05-06-code.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +124,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "2023-01-14-chatgpt.md",
+                "file": "2022-05-06-code.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +147,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "2023-01-14-chatgpt.md"
+                "file": "2022-05-06-code.md"
               }
             }
           }
@@ -146,15 +168,17 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "c97b8dcb22fc1ff1",
+  "active": "6b214e8c96efc2a7",
   "lastOpenFiles": [
+    "2022-10-11-docker.md",
+    "2022-05-06-code.md",
     "2023-01-14-dbeaver.md",
-    "2023-01-14-chatgpt.md",
+    "2022-10-17-laravel.md",
     "2023-01-02-dailyroutine.md",
+    "2023-01-14-chatgpt.md",
     "2017-01-01-welcome.md",
     "2018-06-01-imgeffect.md",
     "2022-08-01-diet.md",
-    "2022-10-11-docker.md",
     "2023-01-12-tools.md",
     "2023-01-12-obsidian.md",
     "Untitled.md"
