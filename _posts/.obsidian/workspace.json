@@ -25,14 +25,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "2022-05-06-code.md",
+                "file": "2023-12-22-Animations.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -86,8 +85,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -168,14 +166,15 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "6b214e8c96efc2a7",
+  "active": "c97b8dcb22fc1ff1",
   "lastOpenFiles": [
-    "2022-10-11-docker.md",
-    "2022-05-06-code.md",
+    "2023-12-22-Animations.md",
     "2023-01-14-dbeaver.md",
+    "2023-01-14-chatgpt.md",
+    "2022-05-06-code.md",
+    "2022-10-11-docker.md",
     "2022-10-17-laravel.md",
     "2023-01-02-dailyroutine.md",
-    "2023-01-14-chatgpt.md",
     "2017-01-01-welcome.md",
     "2018-06-01-imgeffect.md",
     "2022-08-01-diet.md",
