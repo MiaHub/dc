@@ -9,16 +9,16 @@ sidebar:
    nav: tool-en 
 --- 
 Tools for animations:
--Pikalabs (Image to Video)
--Midjourney (Create Images from text - no free trials atm... )
-	In Midlibrary are further examples for prompts:
-	Smarthphone--ar 9:16  | pc usual --ar 16:9 
-	artistic --s number
-	Details --q number
-	Chaos --c number
-	Detail Loeschen --no eggs
-	designed by famous_artist
-	in the style of pixar 
-	prompt.moonshot.com
-	descripe Bildhochladen
--Leonardo.ai (Create Images from text - free ? )
+1. Pikalabs (Image to Video)
+2. Midjourney (Create Images from text - no free trials atm... )
+ * In Midlibrary are further examples for prompts:
+ * Smarthphone--ar 9:16  | pc usual --ar 16:9 
+ * artistic --s number
+ * Details --q number
+ * Chaos --c number
+ * Detail Loeschen --no eggs
+ * designed by famous_artist
+ * in the style of pixar 
+ * prompt.moonshot.com
+ * descripe Bildhochladen
+3. Leonardo.ai (Create Images from text - free ? )
