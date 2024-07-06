@@ -29,7 +29,7 @@ sidebar:
 
 ### Types of Supervised Learning
 
-**[Classification](2024-07-06-classification):**
+**[Classification](classification):**
 
 - **Purpose:** Predict categorical labels.
 - **Algorithms:**
@@ -38,7 +38,7 @@ sidebar:
     - K-Nearest Neighbors (KNN)
     - Logistic Regression
 
-**[Regression](2024-07-06-regression):**
+**[Regression](regression):**
 
 - **Purpose:** Predict continuous values.
 - **Algorithms:**
