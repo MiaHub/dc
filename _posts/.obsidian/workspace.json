@@ -4,28 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "e1fed30d8b8cd0fb",
+        "id": "8d120d53251c1da4",
         "type": "tabs",
         "children": [
           {
-            "id": "c97b8dcb22fc1ff1",
+            "id": "c7cf354bbabd1c0e",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "2023-12-22-Animations.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "6b214e8c96efc2a7",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "2023-12-22-Animations.md",
+                "file": "2024-07-06-python.md",
                 "mode": "source",
                 "source": false
               }
@@ -105,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "2023-12-22-Animations.md",
+                "file": "2024-07-06-python.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -122,7 +110,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "2023-12-22-Animations.md",
+                "file": "2024-07-06-python.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -145,7 +133,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "2023-12-22-Animations.md"
+                "file": "2024-07-06-python.md"
               }
             }
           }
@@ -166,22 +154,24 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "c97b8dcb22fc1ff1",
+  "active": "c7cf354bbabd1c0e",
   "lastOpenFiles": [
+    "2024-07-06-python.md",
+    "2023-12-22-Animations.md",
+    "Untitled.md",
+    "2022-05-06-code.md",
+    "fehler c-osr.md",
+    "2023-01-14-dbeaver.md",
     "2020-07-23-spirit.md",
     "2018-06-01-imgeffect.md",
     "2017-01-01-welcome.md",
     "2022-08-01-diet.md",
-    "2022-05-06-code.md",
     "2022-10-11-docker.md",
     "2023-01-12-obsidian.md",
     "2023-01-02-health.md",
     "2023-01-02-dailyroutine.md",
     "2023-01-12-tools.md",
     "2023-01-14-chatgpt.md",
-    "2023-01-14-dbeaver.md",
-    "2023-12-22-Animations.md",
-    "2022-10-17-laravel.md",
-    "Untitled.md"
+    "2022-10-17-laravel.md"
   ]
 }
