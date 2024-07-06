@@ -71,7 +71,7 @@ health-en:
       - title:  DailyRoutine
         url:    /2023/01/02/dailyroutine
       - title:  Spirit
-        url:    /2020/07/23/spirit     
+        url:    /2020/07/23/spirit
       - title:  Diet
         url:    /2022/08/01/diet
 
@@ -83,11 +83,15 @@ code-en:
   - title:      Code
     children:
       - title:  Code
-        url:    2022/05/06/health
+        url:    2022/05/06/code
       - title:  Docker
         url:    2022/10/11/docker
       - title:  Laravel
         url:    2022/10/17/laravel
+      - title:  Python
+        url:    2024/07/06/python
+      - title:  MachineLearning
+        url:    2024/07/06/machinelearning
 
 tool-en:
   - title:      Start
