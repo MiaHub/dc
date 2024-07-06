@@ -4,15 +4,15 @@ layout: none
 <!DOCTYPE html><html lang="en">
     <head><meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/zepto/1.2.0/zepto.min.js"></script>
     <script src="https://unpkg.co/gsap@3/dist/gsap.min.js"></script>
     <script src="https://unpkg.com/gsap@3/dist/ScrollTrigger.min.js"></script>
     <script src="https://unpkg.com/gsap@3/dist/ScrollToPlugin.min.js"></script>
     <script src='https://code.jquery.com/jquery-3.3.1.slim.min.js'></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>    
-    <!-- 
-     change for local dev 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <!--
+     change for local dev
     -->
     <!-- <link rel="stylesheet" href="/assets/css/main.css">
     <script src="/assets/js/jlanding.js"></script>
@@ -20,26 +20,26 @@ layout: none
 
     <link rel="stylesheet" href='{{ "/assets/css/main.css" | relative_url }}'>
     <script src='{{ "/assets/js/jlanding.js" | relative_url }}'></script>
-    <link rel="stylesheet" href='{{ "/assets/css/redPill.css" | relative_url }}'> 
-    <link rel="stylesheet" href='{{ "/assets/css/bluePill.css" | relative_url }}'> 
+    <link rel="stylesheet" href='{{ "/assets/css/redPill.css" | relative_url }}'>
+    <link rel="stylesheet" href='{{ "/assets/css/bluePill.css" | relative_url }}'>
     </head>
-    
-    
+
+
     <body onload="init();" style="margin: 0; padding: 0; background-color: #000000;">
       <canvas id="canvas"></canvas>
-        
+
         <button id="buttonred" hidden="hidden" class="btn">leave</button>
         <button id="button" hidden="hidden" class="btnblue">stay</button>
-         
-    </body>    
-    
+
+    </body>
+
     <div target="typeText">
       <div class="typing-container">
       <span id="sentence" class="sentence"></span>
       <span id="feature-text"></span>
       <span class="input-cursor"></span>
     </div>
-    
+
 
     <script>
       // button show delay
@@ -49,7 +49,7 @@ layout: none
           let hidden = element.getAttribute("hidden");
           element.removeAttribute("hidden");
           }
-          
+
           function waitForMs(ms) {
               return new Promise(resolve => setTimeout(resolve, ms))
           }
@@ -64,19 +64,19 @@ layout: none
 
         // resize the canvas to fill browser window dynamically
         window.addEventListener('resize', resizeCanvas, false);
-        
+
         function resizeCanvas() {
                 canvas.width = window.innerWidth;
                 canvas.height = window.innerHeight;
-                
+
                 /**
-                 * Your drawings need to be inside this function otherwise they will be reset when 
+                 * Your drawings need to be inside this function otherwise they will be reset when
                  * you resize the browser window and the canvas goes will be cleared.
                  */
-                drawStuff(); 
+                drawStuff();
         }
         resizeCanvas();
-        
+
         function drawStuff() {
                 // do your drawing stuff here
         }
