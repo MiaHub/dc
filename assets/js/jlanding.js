@@ -1,4 +1,4 @@
-// matrix 
+// matrix
 var tileSize = 20;
 // a higher fade factor will make the characters fade quicker
 var fadeFactor = 0.05;
@@ -10,7 +10,7 @@ let buttonTimer = 0;
 let buttonDelay = 2000;
 
 // special Array
-var specArray = false; 
+var specArray = false;
 
 var canvas;
 var ctx;
@@ -23,7 +23,7 @@ function init()
 {
     canvas = document.getElementById( 'canvas' );
     ctx = canvas.getContext( '2d' );
-    
+
     initMatrix();
 
     // start the main loop
@@ -56,7 +56,7 @@ function draw()
     ctx.fillRect( 0 , 0 , canvas.width , canvas.height );
 
     // pick a font slightly smaller than the tile size
-    ctx.font = (tileSize-2)+"px monospace";    
+    ctx.font = (tileSize-2)+"px monospace";
     ctx.fillStyle = lettercollors;
     for ( let i = 0 ; i < columns.length ; ++i )
     {
@@ -67,13 +67,13 @@ function draw()
               '0',
               '1'
             ];
-            var randomIndex = Math.floor(Math.random() * textArray.length); 
+            var randomIndex = Math.floor(Math.random() * textArray.length);
             var randomCharacter = textArray[randomIndex];
-        } else 
+        } else
         {
           var randomCharacter = String.fromCharCode( 33+Math.floor(Math.random()*94) );
         }
-        
+
         // pick a random ascii character (change the 94 to a higher number to include more characters)
         ctx.fillText( randomCharacter , columns[i].x , columns[i].stackCounter*tileSize+tileSize );
 
@@ -87,18 +87,18 @@ function draw()
 }
 
 // MAIN LOOP
-function tick() 
-{        
+function tick()
+{
   document.getElementById("button").onclick = function() {
 
     if (buttonWAsClicked == 0)
     {
       typeSentence("Hello World!", "#sentence")
-      buttonWAsClicked = 1;    
-      buttonDelay = 1800;       
+      buttonWAsClicked = 1;
+      buttonDelay = 1800;
     } else if (buttonWAsClicked == 1)
-    { 
-      typeSentence("My name is ...", "#sentence")
+    {
+      typeSentence("My name is Dieter Cho", "#sentence")
       buttonWAsClicked = 2;
       buttonDelay = 3600;
     } else if (buttonWAsClicked == 2)
@@ -108,12 +108,12 @@ function tick()
       buttonDelay = 4000;
     } else if (buttonWAsClicked == 3)
     {
-      typeSentence("Do you have problems with coding ?", "#sentence")
+      typeSentence("Do you have problems with your Code ?", "#sentence")
       buttonWAsClicked = 4;
       buttonDelay = 4000;
     } else if (buttonWAsClicked == 4)
     {
-      typeSentence("Coding can be beautiful.", "#sentence")
+      typeSentence("Coding can be easy.", "#sentence")
       buttonWAsClicked = 5;
       buttonDelay = 2200;
     } else if (buttonWAsClicked == 5)
@@ -126,45 +126,45 @@ function tick()
      else if (buttonWAsClicked == 6)
     {
       setTimeout(function() {
-        location.href = "/dc/2017/01/01/welcome.html";     
-        // location.href = "https://miahub.github.io/dc/2017/01/01/welcome.html";    
-            // location.href = '{{ "/2017/01/01/welcome.html" | relative_url }}';     
-    }, 900); 
-    
-    } 
-  }  
+        location.href = "/dc/2017/01/01/welcome.html";
+        // location.href = "https://miahub.github.io/dc/2017/01/01/welcome.html";
+            // location.href = '{{ "/2017/01/01/welcome.html" | relative_url }}';
+    }, 900);
 
-  switch(buttonWAsClicked) 
+    }
+  }
+
+  switch(buttonWAsClicked)
   {
     case 1:
-    lettercollors = "rgb( 0, 0, 255 )";      
+    lettercollors = "rgb( 0, 0, 255 )";
     break;
     case 2:
-    lettercollors = "rgb( 255, 0,  0)";  
+    lettercollors = "rgb( 255, 0,  0)";
     break;
     case 3:
-    lettercollors = "rgb( 165, 47, 178 )";      
+    lettercollors = "rgb( 165, 47, 178 )";
     break;
     case 4:
-    lettercollors = "rgb( 255, 255, 255 )";  
+    lettercollors = "rgb( 255, 255, 255 )";
     break;
     case 5:
-    lettercollors = random_rgba(); 
+    lettercollors = random_rgba();
     case 6:
-    lettercollors = random_rgba(); 
+    lettercollors = random_rgba();
     break;
     default:
-    lettercollors = "rgb( 125, 255, 0 )";                
+    lettercollors = "rgb( 125, 255, 0 )";
   }
 
     draw();
     setTimeout( tick , 50 );
-}  
+}
 
 
 // type Effect
 async function typeSentence(sentence, eleRef, delay = 100) {
-  deleteSentence("#sentence");  
+  deleteSentence("#sentence");
 
   const letters = sentence.split("");
   let i = 0;
@@ -192,22 +192,22 @@ function waitForMs(ms) {
 
 // button Click effect
 $(function() {
-  $('.btnblue').click(function() {    
+  $('.btnblue').click(function() {
 
     if ($(this).hasClass("is-clicked"))
     {
       $(this).removeClass("is-clicked");
       $(this).addClass("is-clickedd");
-    } else  
+    } else
     {
       $(this).removeClass("is-clickedd");
       $(this).addClass("is-clicked");
     }
 
-    document.getElementById("button").disabled = true;     
+    document.getElementById("button").disabled = true;
 
     setTimeout(function() {
-      document.getElementById("button").disabled = false; 
+      document.getElementById("button").disabled = false;
     }, buttonDelay);
   });
 });
@@ -221,24 +221,24 @@ function random_rgba() {
 // button Red click effect
 // button Click effect
 $(function() {
-  $('.btn').click(function() {    
+  $('.btn').click(function() {
 
     if ($(this).hasClass("is-clicked"))
     {
       $(this).removeClass("is-clicked");
       $(this).addClass("is-clickedd");
-    } else  
+    } else
     {
       $(this).removeClass("is-clickedd");
       $(this).addClass("is-clicked");
     }
 
-    
-    document.getElementById("button").disabled = true;     
-    
+
+    document.getElementById("button").disabled = true;
+
     setTimeout(function() {
-      document.getElementById("button").disabled = false; 
-      location.href = "/dc/2017/01/01/welcome.html";     
+      document.getElementById("button").disabled = false;
+      location.href = "/dc/2017/01/01/welcome.html";
     }, 900);
 
   });
