@@ -11,9 +11,6 @@ sidebar:
 
 Tutorial:
 
-Animations:
-https://www.mixamo.com/
-
 Render Pipeline:
 - Pink materials ... assetstore because other graphic render pipeline
 - URP = Universal should be used for not high definition projects 
