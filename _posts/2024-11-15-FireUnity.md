@@ -1,5 +1,5 @@
 ---
-title: FirebaseUnity
+title: FireUnity
 layout: article
 header:
   theme: dark
@@ -11,11 +11,12 @@ sidebar:
 
 # Link Firebase Project with Unity:
 {%- include extensions/youtube.html id='A6du3DUTIPI' -%}
-
 ### Android debug:
 keytool -genkeypair -v -keystore C:\Users\<YourUsername>\.android\debug.keystore -keyalg RSA -keysize 2048 -validity 10000 -alias androiddebugkey
 
 keytool -list -v -alias androiddebugkey -keystore "C:\Users\diete\.android\debug.keystore"
 
+# Adding Firestore to your Unity game:
+{%- include extensions/youtube.html id='b5h1bVGhuRk' -%}
 #### Building firestore for an ios on a windows pc is not supported.
 Solution needed...
