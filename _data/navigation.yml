@@ -73,7 +73,7 @@ health-en:
       - title:  Spirit
         url:    /2020/07/23/spirit
       - title:  Diet
-        url:    /2022/08/01/diet
+        url:    /2024/11/24/diet
 
 code-en:
   - title:      Start
@@ -92,6 +92,24 @@ code-en:
         url:    2024/07/06/python
       - title:  MachineLearning
         url:    2024/07/06/machinelearning
+      - title:  Regression
+        url:    2024/07/06/regression
+      - title:  Unity
+        url:    2024/11/01/Unity
+      - title:  EndlessRunnerTest
+        url:    2024/11/09/EndlessRunnerTest
+      - title:  AudioUnity
+        url:    2024/11/10/AudioUnity
+      - title:  AnimationUnity
+        url:    2024/11/11/AnimationUnity
+      - title:  UiUnity
+        url:    2024/11/11/UiUnity
+      - title:  TextUnity
+        url:    2024/11/13/TextUnity
+      - title:  FireUnity
+        url:    2024/11/15/FireUnity
+      - title:  FireStore
+        url:    2024/11/21/FireStore
 
 tool-en:
   - title:      Start
