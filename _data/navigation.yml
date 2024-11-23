@@ -74,6 +74,8 @@ health-en:
         url:    /2020/07/23/spirit
       - title:  Diet
         url:    /2024/11/24/diet
+      - title:  Korean
+        url:    https://miahub.github.io/Korean/
 
 code-en:
   - title:      Start
@@ -110,6 +112,8 @@ code-en:
         url:    2024/11/15/FireUnity
       - title:  FireStore
         url:    2024/11/21/FireStore
+      - title:  KoreanLanguageLearning
+        url:    2024/11/23/KoreanLanguageLearning
 
 tool-en:
   - title:      Start
