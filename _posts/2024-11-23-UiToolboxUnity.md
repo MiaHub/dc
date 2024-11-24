@@ -5,20 +5,20 @@ header:
   theme: dark
   background: 'linear-gradient(67deg, rgba(17,26,34,1) 25%, rgba(102,102,102,1) 43%, rgba(255,255,255,1) 80%)'
 tags: Unity
-sidebar: 
-   nav: code-en   
---- 
+sidebar:
+   nav: code-en
+---
 
-1. Hierachy -> Create UI Toolkit ->  Ui Document 
+1. Hierachy -> Create UI Toolkit ->  Ui Document
 2. Assets -> Ui Toolkit -> Create Visual Tree Document -> double click it
-3. Create Visual Element 
-4. Create Label 
-5. Create Style Sheet USS (Unity Style Sheet) under Assets / Ui Toolkit 
+3. Create Visual Element
+4. Create Label
+5. Create Style Sheet USS (Unity Style Sheet) under Assets / Ui Toolkit
 6. Create Selectors (eg .header)
 7. Add Selectors -> Inspector -> Style class List -> type .header
 8. Create Buttons -> apply to Visual Element -> Create .button Selector
 9. Align .button -> Add Spacing -> Add Sprite -> Add Round Corners
-10. Add Background Sprite to Visual Element 
+10. Add Background Sprite to Visual Element
 11. Create hover event .button:hover -> up size -> add delay to .button -> can preview
 12. Add Button Script ( need Audio Source - no need for resource )
 
@@ -120,5 +120,5 @@ public class MainMenuEvents : MonoBehaviour
 
 ```
 
-### UI Toolkit Getting started 
+### UI Toolkit Getting started
 <div>{%- include extensions/youtube.html id='_jtj73lu2Ko' -%}</div>
