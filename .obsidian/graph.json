@@ -1,6 +1,6 @@
 {
   "collapse-filter": false,
-  "search": "line:(sprite)",
+  "search": "line:(nav)",
   "showTags": true,
   "showAttachments": false,
   "hideUnresolved": false,
@@ -17,6 +17,6 @@
   "repelStrength": 10,
   "linkStrength": 1,
   "linkDistance": 250,
-  "scale": 1.0000000000000109,
+  "scale": 0.7132754626224505,
   "close": false
 }

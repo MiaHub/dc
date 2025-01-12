@@ -11,5 +11,5 @@ sidebar:
 
 <div>{%- include extensions/youtube.html id='52yUcKLMKX0' -%}</div>
 
-1. install firebase sdk package -> auth
+1. install packacks -> custom package -> install firebase sdk package -> auth
 2. 
