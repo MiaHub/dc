@@ -1,4 +1,7 @@
 header:
+  - title: Projects
+    url: /projects.html
+
   - titles:
       # @start locale config
       en      : &EN       Archive
