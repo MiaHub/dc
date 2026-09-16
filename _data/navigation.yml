@@ -1,4 +1,7 @@
 header:
+  - title: Welcome
+    url: /2017/01/01/welcome.html
+
   - title: Projects
     url: /projects.html
 
