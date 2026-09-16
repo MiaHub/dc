@@ -185,6 +185,9 @@ highlighter : rouge
 permalink   : date
 
 exclude:
+  # Obsidian working notes - kept out of the build as well as out of git.
+  # .gitignore alone does NOT stop Jekyll copying these into _site.
+  - /personal
   - CHANGELOG.md
   - HOW_TO_RELEASE.md
   - Gemfile
