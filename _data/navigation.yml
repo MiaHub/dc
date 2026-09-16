@@ -118,6 +118,18 @@ code-en:
         url:    2024/11/15/FireUnity
       - title:  FireStore
         url:    2024/11/21/FireStore
+  - title:      AI on IBM Power
+    children:
+      - title:  AI on IBM i in practice
+        url:    2026/08/20/AIonIBMiPractice
+      - title:  Granite models
+        url:    2026/08/28/GraniteModels
+      - title:  Spyre Accelerator
+        url:    2026/09/05/SpyreAccelerator
+      - title:  MCP on IBM i
+        url:    2026/09/10/MCPonIBMi
+      - title:  watsonx Code Assistant for i
+        url:    2026/09/14/WatsonxCodeAssistantForI
 
 tool-en:
   - title:      Start
