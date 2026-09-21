@@ -10,30 +10,30 @@ sidebar:
   nav: code-en
 ---
 
-![[Pasted image 20260918153235.png]]
+![]({{ site.baseurl }}/assets/attachments/Pasted%20image%2020260918153235.png)
 
 ## Activating Bones 
 
-![[Pasted image 20260918152323.png]]
+![]({{ site.baseurl }}/assets/attachments/Pasted%20image%2020260918152323.png)
 
 
 ## Switching to Pose Mode
 
 Click on a bone then you can switch Mode
-![[Pasted image 20260918152415.png]]
+![]({{ site.baseurl }}/assets/attachments/Pasted%20image%2020260918152415.png)
 
 ## Switching Action Editor
 
 1. First Bottom left go to Dope Sheet 
-![[Pasted image 20260918152507.png]]
+![]({{ site.baseurl }}/assets/attachments/Pasted%20image%2020260918152507.png)
 2. Activate Action Editor
-![[Pasted image 20260918152559.png]]
+![]({{ site.baseurl }}/assets/attachments/Pasted%20image%2020260918152559.png)
 3. you Can switch between Animations (eg. Crouch)
 
 ## Moving in Animation
 
 First activate the Autokeying
-![[Pasted image 20260918152927.png]]
+![]({{ site.baseurl }}/assets/attachments/Pasted%20image%2020260918152927.png)
 
 Then when you click Bone + G = Grab and Move , + R = Rotate 
 
