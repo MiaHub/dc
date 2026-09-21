@@ -1,0 +1,32 @@
+/* --- HEADING 1 (#) - Clean, uppercase with a faint line divider --- */
+.markdown-preview-view h1, .cm-header-1 {
+  font-size: 1.55em !important;      /* Slightly scaled down from giant default */
+  font-weight: 800 !important;       /* Boldest header */
+  text-transform: uppercase;         /* Elegant magazine look */
+  letter-spacing: 1px;               /* Clean spacing */
+  color: var(--text-normal) !important; /* Uses your theme's default text color */
+  border-bottom: 1px solid var(--background-modifier-border) !important; /* Micro-thin grey line */
+  padding-bottom: 6px;
+  margin-top: 1.6em !important;
+}
+
+/* --- HEADING 2 (##) - Structured but muted with a left vertical line --- */
+.markdown-preview-view h2, .cm-header-2 {
+  font-size: 1.35em !important;
+  font-weight: 700 !important;         /* Bumped up slightly for better contrast */
+  color: var(--text-normal) !important;/* Uses the full normal text color for clearer hierarchy */
+  border-left: 3px solid var(--background-modifier-border) !important; /* Muted vertical bar */
+  padding-left: 8px !important;        /* Pushes text away from the bar */
+  margin-top: 1.4em !important;
+}
+
+/* --- HEADING 3 (###) - Purely text-based, light, and italicized --- */
+.markdown-preview-view h3, .cm-header-3 {
+  font-size: 1.15em !important;        /* Micro-adjustment to space it away from H2 */
+  font-weight: 500 !important;
+  font-style: italic;
+  color: var(--text-muted) !important; /* Kept light grey */
+  padding-left: 0px !important;        /* No borders, purely flat text */
+  margin-top: 1.2em !important;
+}
+
