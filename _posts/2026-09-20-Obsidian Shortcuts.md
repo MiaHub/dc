@@ -1,0 +1,12 @@
+---
+title: Obsidian Shortcuts
+layout: article
+header:
+  theme: dark
+  background: linear-gradient(67deg, rgba(17,26,34,1) 0%, rgba(30,44,56,1) 45%, rgba(27,122,75,1) 100%)
+tags:
+  - General
+sidebar:
+  nav: code-en
+---
+Toggle Checkbox = Ctrl + L
