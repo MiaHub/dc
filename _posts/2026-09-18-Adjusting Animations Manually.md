@@ -10,30 +10,30 @@ sidebar:
   nav: code-en
 ---
 
-![]({{ site.baseurl }}/assets/attachments/Pasted%20image%2020260918153235.png)
+![](https://miahub.github.io/dc/assets/attachments/Pasted%20image%2020260918153235.png)
 
 ## Activating Bones 
 
-![]({{ site.baseurl }}/assets/attachments/Pasted%20image%2020260918152323.png)
+![](https://miahub.github.io/dc/assets/attachments/Pasted%20image%2020260918152323.png)
 
 
 ## Switching to Pose Mode
 
 Click on a bone then you can switch Mode
-![]({{ site.baseurl }}/assets/attachments/Pasted%20image%2020260918152415.png)
+![](https://miahub.github.io/dc/assets/attachments/Pasted%20image%2020260918152415.png)
 
 ## Switching Action Editor
 
 1. First Bottom left go to Dope Sheet 
-![]({{ site.baseurl }}/assets/attachments/Pasted%20image%2020260918152507.png)
+![](https://miahub.github.io/dc/assets/attachments/Pasted%20image%2020260918152507.png)
 2. Activate Action Editor
-![]({{ site.baseurl }}/assets/attachments/Pasted%20image%2020260918152559.png)
+![](https://miahub.github.io/dc/assets/attachments/Pasted%20image%2020260918152559.png)
 3. you Can switch between Animations (eg. Crouch)
 
 ## Moving in Animation
 
 First activate the Autokeying
-![]({{ site.baseurl }}/assets/attachments/Pasted%20image%2020260918152927.png)
+![](https://miahub.github.io/dc/assets/attachments/Pasted%20image%2020260918152927.png)
 
 Then when you click Bone + G = Grab and Move , + R = Rotate 
 
