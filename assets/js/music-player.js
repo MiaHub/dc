@@ -24,7 +24,8 @@
   var wanted = autostart || state.on === true;
   var audio = new Audio(src);
   audio.preload = wanted ? 'auto' : 'none';
-  if (!autostart && state.t) audio.currentTime = state.t;
+  var resumeAt = autostart ? 0 : (state.t || 0);
+  if (resumeAt) audio.currentTime = resumeAt;
 
   var style = document.createElement('style');
   style.textContent =
@@ -64,6 +65,8 @@
   }
 
   function play() {
+    // A saved position at the very end would make the song stop right away.
+    if (audio.ended || (audio.duration && audio.currentTime >= audio.duration - 1)) audio.currentTime = 0;
     audio.play().then(function () {
       pending = false;
       render();
@@ -103,17 +106,22 @@
     toggle();
   });
 
+  audio.addEventListener('loadedmetadata', function () {
+    if (audio.currentTime >= audio.duration - 1) audio.currentTime = 0;
+  });
   audio.addEventListener('play', render);
   audio.addEventListener('pause', render);
   audio.addEventListener('ended', function () {
     audio.currentTime = 0;
+    resumeAt = 0;
     save({ on: false, t: 0 });
     render();
   });
 
   window.addEventListener('pagehide', function () {
-    if (audio.ended) return;
-    save({ on: !audio.paused || pending, t: audio.currentTime || state.t || 0 });
+    // Before the audio has loaded, currentTime is not reliable; keep the position it started from.
+    var t = audio.readyState > 0 ? audio.currentTime : resumeAt;
+    save({ on: !audio.paused || pending, t: t });
   });
 
   function mount() {
