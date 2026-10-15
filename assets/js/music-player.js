@@ -25,6 +25,10 @@
   var audio = new Audio(src);
   audio.preload = wanted ? 'auto' : 'none';
   var resumeAt = autostart ? 0 : (state.t || 0);
+  // Count the seconds the page switch took, so the song continues as if it never stopped
+  // (only for a quick page change, not when someone comes back later).
+  var away = state.at ? (Date.now() - state.at) / 1000 : 0;
+  if (resumeAt && state.on && away > 0 && away < 30) resumeAt += away;
   if (resumeAt) audio.currentTime = resumeAt;
 
   var style = document.createElement('style');
@@ -107,7 +111,9 @@
   });
 
   audio.addEventListener('loadedmetadata', function () {
-    if (audio.currentTime >= audio.duration - 1) audio.currentTime = 0;
+    // Safari ignores currentTime set before the file is loaded, so apply the resume position here.
+    if (resumeAt >= audio.duration - 1) resumeAt = 0;
+    if (Math.abs(audio.currentTime - resumeAt) > 0.5) audio.currentTime = resumeAt;
   });
   audio.addEventListener('play', render);
   audio.addEventListener('pause', render);
@@ -121,7 +127,8 @@
   window.addEventListener('pagehide', function () {
     // Before the audio has loaded, currentTime is not reliable; keep the position it started from.
     var t = audio.readyState > 0 ? audio.currentTime : resumeAt;
-    save({ on: !audio.paused || pending, t: t });
+    // "at" only when actually playing: a song that was waiting for a click has not moved on.
+    save({ on: !audio.paused || pending, t: t, at: audio.paused ? 0 : Date.now() });
   });
 
   function mount() {
